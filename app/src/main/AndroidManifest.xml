@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.themebd.mydoctorfinal">
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PrimaryLogin" />
+        <activity android:name=".DoctorSignInActivity" />
+        <activity android:name=".PatientSignInActivity" />
+        <activity android:name=".PatientHome" />
+        <activity android:name=".PatientSignUp" />
+        <activity android:name=".PatientProfile" />
+        <activity android:name=".PatientProfileSetting" />
+        <activity android:name=".DoctorList" />
+        <activity android:name=".DoctorHome" />
+        <activity android:name=".Doctor.DoctorProfile" />
+        <activity android:name=".Doctor.DoctorSetting" />
+        <activity android:name=".DoctorDetails" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".Doctor.DoctorChatActivity" />
+        <activity android:name=".PatientDirectory.PatientInbox" />
+        <activity android:name=".PatientDirectory.PatientChatActivity" />
+        <activity android:name=".Doctor.Prescription" />
+        <activity android:name=".PatientDirectory.PrescriptionList" />
+
+        <!-- for PickImage Library -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <activity android:name=".Doctor.DoctorPrescriptionList"></activity>
+    </application>
+
+</manifest>

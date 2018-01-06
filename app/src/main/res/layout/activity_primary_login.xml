@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.themebd.mydoctorfinal.PrimaryLogin">
+
+    <Switch
+        android:id="@+id/login_option_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/SCBSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+
+        />
+
+    <Button
+        android:id="@+id/get_started_button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_option_selection"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorAccent"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Get Started"/>
+
+    <TextView
+        android:id="@+id/patient_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/login_option_selection"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="Patient" />
+
+    <TextView
+        android:id="@+id/doctor_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@+id/login_option_selection"
+        android:text="Doctor" />
+
+</RelativeLayout>

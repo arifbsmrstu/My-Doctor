@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.themebd.mydoctorfinal.PatientDirectory.PatientChatActivity">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/main_page_toolbar" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_page_toolbar"
+        android:layout_above="@+id/linearLayout"></android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="6"
+        android:background="@color/colorAccent"
+        android:id="@+id/linearLayout">
+
+
+        <ImageView
+            android:id="@+id/send_image"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:onClick="sendImageP"
+            android:src="@drawable/ic_perm_media_black_24dp" />
+
+        <EditText
+            android:id="@+id/send_text_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:backgroundTint="#000000"
+            android:textCursorDrawable="@null"
+            android:textColor="#000000"
+            android:layout_margin="2dp"/>
+
+        <ImageView
+            android:id="@+id/message_send_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_send_black_24dp"
+            android:scaleType="fitCenter"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

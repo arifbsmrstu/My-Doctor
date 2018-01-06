@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:layout_marginBottom="1dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_person_black_24dp"
+        android:id="@+id/msg_list_profile_img" />
+
+    <TextView
+        android:id="@+id/message_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:textSize="24sp"
+        android:padding="0dp"
+        android:layout_alignTop="@+id/msg_list_profile_img"
+        android:layout_toEndOf="@+id/msg_list_profile_img" />
+
+    <TextView
+        android:id="@+id/msg_from_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="normal"
+
+        android:layout_below="@+id/message_sender"
+        android:layout_toEndOf="@+id/msg_list_profile_img" />
+
+    <TextView
+        android:id="@+id/msg_send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:layout_marginEnd="7dp"
+        android:layout_alignBaseline="@+id/message_sender"
+        android:layout_alignBottom="@+id/message_sender"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

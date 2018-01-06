@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.themebd.mydoctorfinal.DoctorSignInActivity">
+
+    <ScrollView
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Doctor"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="34sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="7dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:tint="@color/colorAccent"
+                    android:src="@drawable/ic_email_black_24dp"/>
+
+                <EditText
+                    android:id="@+id/doctor_email_for_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:hint="Email"
+                    android:textColorHint="@color/colorAccent"
+                    android:inputType="textEmailAddress"
+                    android:layout_weight="3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="7dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:tint="@color/colorAccent"
+                    android:src="@drawable/ic_lock_black_24dp"/>
+
+                <EditText
+                    android:id="@+id/doctor_pass_for_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:hint="Password"
+                    android:textColorHint="@color/colorAccent"
+                    android:inputType="textPassword"
+                    android:layout_weight="3"/>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/doctor_sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Sign In"
+                android:textColor="@color/colorAccent"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
