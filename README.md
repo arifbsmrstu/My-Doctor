@@ -1,4 +1,4 @@
-# My-Doctor (I am not working in this project anymore. If it works with :) Otherwise you need to solve your issue by yourself. Love and respect to all <3 )
+# My-Doctor (I am not working in this project anymore. If it works , It's good :) Otherwise you need to solve your issue by yourself. Love and respect to all <3 )
 
 
 This is a simple android app, here patient can create easy communication with doctor and get suggestion from doctor.
